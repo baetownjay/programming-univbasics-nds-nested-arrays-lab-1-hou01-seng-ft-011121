@@ -31,12 +31,12 @@ def sorted_matrix
   # Using Array literal syntax only, build another nested array that 
   # uses the arrays of conventional and organic produce as before.
   # However, this time, sort each internal array alphabetically by the first character
-  array1 = [CONVENTIONAL_PRODUCE, ORGANIC_PRODUCE]
-  i = 0
-  while i < array1.length {
-    array2 = 
-  }
-  array1.sort
+  array = []
+  arr1 = CONVENTIONAL_PRODUCE.sort
+  arr2 = ORGANIC_PRODUCE.sort
+  arr1.concat(arr2)
+  arr1.sort
+  array.push(arr1)
 end
 
 def matrix_lookup(matrix, row, column)
